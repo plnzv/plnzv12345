@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -69,6 +70,7 @@ li {
   margin-top: 162px;
   justify-content: center;
   align-items: center;
+
 }
 
 .picture {
@@ -318,13 +320,14 @@ li {
 /*--------contact end ------------*/
 
 
-@media screen and (max-width: 900px) and (min-width:600px) {
+@media screen and (max-width: 900px) and (min-width:200px) {
 
   .project {
     display: none;
   }
 
-  .blue .up,
+  .blue,
+  .up,
   .down {
     flex-direction: column;
     justify-content: center;
@@ -332,6 +335,10 @@ li {
     padding-top: 5%;
     margin: 0;
     text-align: center;
+  }
+
+  .down {
+    padding-top: 10%;
   }
 
   .phone {
@@ -352,32 +359,24 @@ li {
     padding: 0;
     margin: 0;
     padding-bottom: 5%;
+
+  }
+
+  .picture img {
+    width: 60%;
   }
 
   .text {
     font-size: 13px;
   }
 
-
-}
-
-@media screen and (max-width: 600px) and (min-width:200px) {
   body {
     font-size: 12px;
   }
 
-  .up,
-  .down {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 5%;
-    margin: 0;
-    text-align: center;
-  }
 
   .header {
-    padding-bottom: 20%;
+    height: 700px;
   }
 
   .logo {
@@ -413,7 +412,7 @@ li {
 
   .photo {
     margin: 0;
-    padding-left: 30%;
+    padding-left: 25%;
     width: 100%;
   }
 }
